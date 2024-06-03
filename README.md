@@ -1,6 +1,11 @@
 # react-native-merge-images-vertically
 
-Straightforward lib to merge images vertically for react native
+This straightforward library for React Native enables vertical image merging, inspired by [react-native-images-merge](https://github.com/cristea2017/react-native-images-merge). Unlike the original, this library allows for merging images regardless of their size, meaning it is not limited to square images only.
+### Android Example
+![Android Example](media/androidExample.png)
+
+### iOS Example
+![iOS Example](media/iOSExample.png)
 
 ## Installation
 
@@ -8,14 +13,19 @@ Straightforward lib to merge images vertically for react native
 npm install react-native-merge-images-vertically
 ```
 
+```sh
+cd ios 
+pod install
+```
+
 ## Usage
 
 ```js
-import { multiply } from 'react-native-merge-images-vertically';
+import { mergeImages } from 'react-native-merge-images-vertically';
 
 // ...
 
-const result = await multiply(3, 7);
+const result = await mergeImages(['image1Base64', 'image2Base64']);
 ```
 
 ## Contributing
